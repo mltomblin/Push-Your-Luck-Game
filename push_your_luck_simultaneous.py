@@ -9,7 +9,7 @@ class Player:
 
 class PushYourLuckGame:
     def __init__(self):
-        self.main_spinner = [1, 2, 3, 4, 5, 6, 7]
+        self.main_spinner = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
         self.players = []
         self.target_num = 0
         self.round_spinner = []

@@ -2,8 +2,8 @@ import random
 
 class PushYourLuckGame:
     def __init__(self):
-        #self.main_spinner = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-        self.main_spinner = [1, 2, 3, 4, 5] #smaller list for testing
+        self.main_spinner = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+        #self.main_spinner = [1, 2, 3, 4, 5] #smaller list for testing
         self.score = 0
         self.bank = 0
         self.target_num = 0
@@ -22,10 +22,15 @@ class PushYourLuckGame:
         
         self.start_new_round()
 
-        if self.score >= 50:
+        if self.score >= 100: 
             self.game_over = True
             print(f"\nYou win with {self.score} points!")
             return
+
+        #if self.score >= 50:   #lower score for testing
+            #self.game_over = True
+            #print(f"\nYou win with {self.score} points!")
+            #return
        
         print(f"\nNew round starting! Target number is: {self.target_num}")
         
